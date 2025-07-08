@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompanyDetail.vue renders company data correctly 1`] = `
+<div class="company-detail">
+  <div class="content">
+    <div class="header">
+      <h1>Acme Corporation</h1>
+      <div class="meta"><span class="country">United Kingdom</span><span class="founded">Founded: 15/05/2010</span><span class="status active">Active</span></div>
+    </div>
+    <div class="description">
+      <h2>About</h2>
+      <p>A leading technology company specializing in innovative solutions.</p>
+    </div>
+    <div class="employees">
+      <h2>Employees (2)</h2>
+      <div class="employee-grid">
+        <div class="employee-card">
+          <h3>John Smith</h3>
+          <p class="job-title">Software Engineer</p>
+          <p class="contact"><a href="mailto:john.smith@acme.com">john.smith@acme.com</a><span>+44 123 456 7890</span></p>
+        </div>
+        <div class="employee-card">
+          <h3>Jane Doe</h3>
+          <p class="job-title">Product Manager</p>
+          <p class="contact"><a href="mailto:jane.doe@acme.com">jane.doe@acme.com</a><span>+44 123 456 7891</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="deals">
+      <h2>Deals</h2>
+      <div class="deals-list">
+        <div class="deal-card">
+          <div class="amount">£1,000,000</div>
+          <div class="date">15/01/2023</div>
+        </div>
+        <div class="deal-card">
+          <div class="amount">£2,500,000</div>
+          <div class="date">20/06/2023</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CompanyDetail.vue renders company without deals correctly 1`] = `
+<div class="company-detail">
+  <div class="content">
+    <div class="header">
+      <h1>Acme Corporation</h1>
+      <div class="meta"><span class="country">United Kingdom</span><span class="founded">Founded: 15/05/2010</span><span class="status active">Active</span></div>
+    </div>
+    <div class="description">
+      <h2>About</h2>
+      <p>A leading technology company specializing in innovative solutions.</p>
+    </div>
+    <div class="employees">
+      <h2>Employees (2)</h2>
+      <div class="employee-grid">
+        <div class="employee-card">
+          <h3>John Smith</h3>
+          <p class="job-title">Software Engineer</p>
+          <p class="contact"><a href="mailto:john.smith@acme.com">john.smith@acme.com</a><span>+44 123 456 7890</span></p>
+        </div>
+        <div class="employee-card">
+          <h3>Jane Doe</h3>
+          <p class="job-title">Product Manager</p>
+          <p class="contact"><a href="mailto:jane.doe@acme.com">jane.doe@acme.com</a><span>+44 123 456 7891</span></p>
+        </div>
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+`;
+
+exports[`CompanyDetail.vue renders company without employees correctly 1`] = `
+<div class="company-detail">
+  <div class="content">
+    <div class="header">
+      <h1>Acme Corporation</h1>
+      <div class="meta"><span class="country">United Kingdom</span><span class="founded">Founded: 15/05/2010</span><span class="status active">Active</span></div>
+    </div>
+    <div class="description">
+      <h2>About</h2>
+      <p>A leading technology company specializing in innovative solutions.</p>
+    </div>
+    <!--v-if-->
+    <div class="deals">
+      <h2>Deals</h2>
+      <div class="deals-list">
+        <div class="deal-card">
+          <div class="amount">£1,000,000</div>
+          <div class="date">15/01/2023</div>
+        </div>
+        <div class="deal-card">
+          <div class="amount">£2,500,000</div>
+          <div class="date">20/06/2023</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CompanyDetail.vue renders error state correctly 1`] = `
+<div class="company-detail">
+  <div class="error">Failed to load company details</div>
+</div>
+`;
+
+exports[`CompanyDetail.vue renders inactive company correctly 1`] = `
+<div class="company-detail">
+  <div class="content">
+    <div class="header">
+      <h1>Acme Corporation</h1>
+      <div class="meta"><span class="country">United Kingdom</span><span class="founded">Founded: 15/05/2010</span><span class="status">Inactive</span></div>
+    </div>
+    <div class="description">
+      <h2>About</h2>
+      <p>A leading technology company specializing in innovative solutions.</p>
+    </div>
+    <div class="employees">
+      <h2>Employees (2)</h2>
+      <div class="employee-grid">
+        <div class="employee-card">
+          <h3>John Smith</h3>
+          <p class="job-title">Software Engineer</p>
+          <p class="contact"><a href="mailto:john.smith@acme.com">john.smith@acme.com</a><span>+44 123 456 7890</span></p>
+        </div>
+        <div class="employee-card">
+          <h3>Jane Doe</h3>
+          <p class="job-title">Product Manager</p>
+          <p class="contact"><a href="mailto:jane.doe@acme.com">jane.doe@acme.com</a><span>+44 123 456 7891</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="deals">
+      <h2>Deals</h2>
+      <div class="deals-list">
+        <div class="deal-card">
+          <div class="amount">£1,000,000</div>
+          <div class="date">15/01/2023</div>
+        </div>
+        <div class="deal-card">
+          <div class="amount">£2,500,000</div>
+          <div class="date">20/06/2023</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CompanyDetail.vue renders loading state correctly 1`] = `
+<div class="company-detail">
+  <div class="loading"> Loading... </div>
+</div>
+`;

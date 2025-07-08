@@ -1,0 +1,38 @@
+[project]
+name = "assessment"
+version = "0.1.0"
+description = "Beauhurst's dev job assessment"
+requires-python = ">=3.12"
+dependencies = [
+    "Django==5.1.4",
+    "django-model-utils==5.0.0",
+    "ipython==8.31.0",
+    "pytest==8.3.4",
+    "pytest-django==4.9.0",
+    "factory-boy==3.3.1",
+    "ruff==0.8.6",
+    "djangorestframework==3.14.0",
+    "opensearch-py==2.3.2",
+    "tqdm==4.66.2",
+    "django-cors-headers==3.14.0",
+    "Faker==22.6.0",
+    "remote-pdb==2.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["assessment", "search", "search_service"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "assessment.settings"
+python_files = "tests.py test_*.py *_tests.py"

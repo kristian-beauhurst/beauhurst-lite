@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployeeDetail.vue renders employee data correctly 1`] = `
+<div class="employee-detail">
+  <div class="content">
+    <div class="header">
+      <h1>John Smith</h1>
+      <div class="meta"><span class="job-title">Senior Software Engineer</span><span class="company"><a href="/companies/1" class="">Acme Corporation</a></span></div>
+    </div>
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:john.smith@acme.com">john.smith@acme.com</a></div>
+        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+44 123 456 7890">+44 123 456 7890</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeDetail.vue renders employee without company correctly 1`] = `
+<div class="employee-detail">
+  <div class="content">
+    <div class="header">
+      <h1>John Smith</h1>
+      <div class="meta"><span class="job-title">Senior Software Engineer</span>
+        <!--v-if-->
+      </div>
+    </div>
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:john.smith@acme.com">john.smith@acme.com</a></div>
+        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+44 123 456 7890">+44 123 456 7890</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeDetail.vue renders employee without phone number correctly 1`] = `
+<div class="employee-detail">
+  <div class="content">
+    <div class="header">
+      <h1>Jane Doe</h1>
+      <div class="meta"><span class="job-title">Product Manager</span><span class="company"><a href="/companies/1" class="">Acme Corporation</a></span></div>
+    </div>
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:jane.doe@acme.com">jane.doe@acme.com</a></div>
+        <!--v-if-->
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeDetail.vue renders error state correctly 1`] = `
+<div class="employee-detail">
+  <div class="error">Failed to load employee details</div>
+</div>
+`;
+
+exports[`EmployeeDetail.vue renders loading state correctly 1`] = `
+<div class="employee-detail">
+  <div class="loading"> Loading... </div>
+</div>
+`;
